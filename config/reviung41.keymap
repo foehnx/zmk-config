@@ -32,12 +32,12 @@
 // ----------------------------------------------------------------------------------
 // |  `  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | DEL |
 // |     |  _  |  <  |  [  |  {  |  (  |   |  )  |  }  |  ]  |  >  |  "  |  '  |
-// |     |     |     |     |     |  =  |   |     |     |     |     |     |     |
+// |     |     |     |     |     |  =  |   |  :  |     |     |     |     |     |
 //                        |     |     | SPC | ADJ |     |
                         bindings = <
-   &kp GRAVE  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET &kp AMPS &kp STAR  &kp MINUS  &kp PLUS  &kp DEL
-   &trans     &kp UNDER  &kp LT  &kp LBKT  &kp LBRC  &kp LPAR       &kp RPAR  &kp RBRC &kp RBKT  &kp GT     &kp DQT   &kp APOS
-   &trans     &trans     &trans  &trans    &trans    &kp EQUAL      &trans    &trans    &trans   &trans     &trans    &trans
+   &kp GRAVE  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS &kp STAR  &kp MINUS  &kp PLUS  &kp DEL
+   &trans     &kp UNDER  &kp LT  &kp LBKT  &kp LBRC  &kp LPAR       &kp RPAR   &kp RBRC &kp RBKT  &kp GT     &kp DQT   &kp APOS
+   &trans     &trans     &trans  &trans    &trans    &kp EQUAL      &kp COLON  &trans    &trans   &trans     &trans    &trans
                                  &trans      &trans       &kp SPACE   &mo 3    &trans
                         >;
                 };
