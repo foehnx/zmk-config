@@ -11,6 +11,38 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+  macros {
+    umla: umla {
+      label = "umla";
+      compatible = "zmk,bahavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tab &kp RALT>
+        , <&macro_tab &kp DQT>
+        , <&macro_tab &kp A>
+    };
+    umlu: umlu {
+      label = "umlu";
+      compatible = "zmk,bahavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tab &kp RALT>
+        , <&macro_tab &kp DQT>
+        , <&macro_tab &kp U>
+    };
+    umlo: umlo {
+      label = "umlo";
+      compatible = "zmk,bahavior-macro";
+      #binding-cells = <0>;
+      bindings
+        = <&macro_tab &kp RALT>
+        , <&macro_tab &kp DQT>
+        , <&macro_tab &kp O>
+    };
+  };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -45,12 +77,12 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL | */
-// |    |     |     |     |     |     |   | LFT | DWN | UP  | RGT |     |     |
+// |    |  ä  |  ö  |  ü  |     |     |   | LFT | DWN | UP  | RGT |     |     |
 // |    |     |     |     | CAPS| GUI |   | HOME| PGDN| PGUP| ENA |     |     |
 //                       |     | ADJ | SPACE |    |     |
                         bindings = <
    &kp LA(TAB)  &kp N1  &kp N2  &kp N3  &kp N4    &kp N5       &kp N6    &kp N7     &kp N8     &kp N9     &kp N0  &kp DEL
-   &trans       &trans  &trans  &trans  &trans    &trans       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+   &trans       <&umla> <&umlo> <&umlu> &trans    &trans       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
    &trans       &trans  &trans  &trans  &kp CLCK  &kp LGUI     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
                            &trans      &trans       &trans        &mo 3      &trans
                         >;
