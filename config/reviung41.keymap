@@ -19,7 +19,7 @@
       bindings
         = <&macro_tab &kp RALT>
         , <&macro_tab &kp DQT>
-        , <&macro_tab &kp A>
+        , <&macro_tab &kp A>;
     };
     umlu: umlu {
       label = "umlu";
@@ -28,7 +28,7 @@
       bindings
         = <&macro_tab &kp RALT>
         , <&macro_tab &kp DQT>
-        , <&macro_tab &kp U>
+        , <&macro_tab &kp U>;
     };
     umlo: umlo {
       label = "umlo";
@@ -37,7 +37,7 @@
       bindings
         = <&macro_tab &kp RALT>
         , <&macro_tab &kp DQT>
-        , <&macro_tab &kp O>
+        , <&macro_tab &kp O>;
     };
   };
 };
