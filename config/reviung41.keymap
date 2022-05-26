@@ -17,27 +17,27 @@
       compatible = "zmk,bahavior-macro";
       #binding-cells = <0>;
       bindings
-        = <&macro_tab &kp RALT>
-        , <&macro_tab &kp DQT>
-        , <&macro_tab &kp A>;
+        = <&macro_tap &kp RALT>
+        , <&macro_tap &kp DQT>
+        , <&macro_tap &kp A>;
     };
     umlu: umlu {
       label = "umlu";
       compatible = "zmk,bahavior-macro";
       #binding-cells = <0>;
       bindings
-        = <&macro_tab &kp RALT>
-        , <&macro_tab &kp DQT>
-        , <&macro_tab &kp U>;
+        = <&macro_tap &kp RALT>
+        , <&macro_tap &kp DQT>
+        , <&macro_tap &kp U>;
     };
     umlo: umlo {
       label = "umlo";
       compatible = "zmk,bahavior-macro";
       #binding-cells = <0>;
       bindings
-        = <&macro_tab &kp RALT>
-        , <&macro_tab &kp DQT>
-        , <&macro_tab &kp O>;
+        = <&macro_tap &kp RALT>
+        , <&macro_tap &kp DQT>
+        , <&macro_tap &kp O>;
     };
   };
 };
@@ -64,12 +64,12 @@
 // ----------------------------------------------------------------------------------
 // |  `  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  +  | DEL |
 // |     |  _  |  <  |  [  |  {  |  (  |   |  )  |  }  |  ]  |  >  |  "  |  '  |
-// |     |     |     |     |     |  =  |   |  :  |     |     |     |  |  |  \  |
+// |     |     |     |     |     |  =  |   |  :  |  .  |     |     |  |  |  \  |
 //                        |     |     | SPC | ADJ |     |
                         bindings = <
    &kp GRAVE  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS &kp STAR  &kp MINUS  &kp PLUS  &kp DEL
    &trans     &kp UNDER  &kp LT  &kp LBKT  &kp LBRC  &kp LPAR       &kp RPAR   &kp RBRC &kp RBKT  &kp GT     &kp DQT   &kp APOS
-   &trans     &trans     &trans  &trans    &trans    &kp EQUAL      &kp COLON  &trans    &trans   &trans     &kp PIPE  &kp BSLH
+   &trans     &trans     &trans  &trans    &trans    &kp EQUAL      &kp COLON  &kp DOT  &trans   &trans     &kp PIPE  &kp BSLH
                                  &trans      &mo 3       &trans   &trans    &trans
                         >;
                 };
