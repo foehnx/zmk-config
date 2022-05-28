@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-  macros {
+  behavior {
     umla: umla {
       label = "umla";
       compatible = "zmk,bahavior-macro";
@@ -31,9 +31,7 @@
       bindings = <&kp RALT>, <&kp DQT>, <&kp O>;
     };
   };
-};
 
-/ {
         keymap {
                 compatible = "zmk,keymap";
 
