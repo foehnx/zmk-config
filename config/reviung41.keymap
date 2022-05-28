@@ -14,19 +14,19 @@
   behavior {
     umla: umla {
       label = "umla";
-      compatible = "zmk,bahavior-macro";
+      compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <&kp RALT>, <&kp DQT>, <&kp A>;
     };
     umlu: umlu {
       label = "umlu";
-      compatible = "zmk,bahavior-macro";
+      compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <&kp RALT>, <&kp DQT>, <&kp U>;
     };
     umlo: umlo {
       label = "umlo";
-      compatible = "zmk,bahavior-macro";
+      compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <&kp RALT>, <&kp DQT>, <&kp O>;
     };
