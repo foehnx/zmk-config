@@ -16,28 +16,19 @@
       label = "umla";
       compatible = "zmk,bahavior-macro";
       #binding-cells = <0>;
-      bindings
-        = <&macro_tap &kp RALT>
-        , <&macro_tap &kp DQT>
-        , <&macro_tap &kp A>;
+      bindings = <&kp RALT>, <&kp DQT>, <&kp A>;
     };
     umlu: umlu {
       label = "umlu";
       compatible = "zmk,bahavior-macro";
       #binding-cells = <0>;
-      bindings
-        = <&macro_tap &kp RALT>
-        , <&macro_tap &kp DQT>
-        , <&macro_tap &kp U>;
+      bindings = <&kp RALT>, <&kp DQT>, <&kp U>;
     };
     umlo: umlo {
       label = "umlo";
       compatible = "zmk,bahavior-macro";
       #binding-cells = <0>;
-      bindings
-        = <&macro_tap &kp RALT>
-        , <&macro_tap &kp DQT>
-        , <&macro_tap &kp O>;
+      bindings = <&kp RALT>, <&kp DQT>, <&kp O>;
     };
   };
 };
